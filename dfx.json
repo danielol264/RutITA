@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "RutITA_backend": {
+      "main": "src/RutITA_backend/main.mo",
+      "type": "motoko"
+    },
+    "RutITA_frontend": {
+      "dependencies": [
+        "RutITA_backend"
+      ],
+      "source": [
+        "src/RutITA_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "RutITA_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
